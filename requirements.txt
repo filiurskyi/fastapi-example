@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+python-dotenv
+pydantic
+sqlalchemy
+asyncpg
+alembic
+email-validator
+python-jose[cryptography]
+bcrypt
+python-multipart
+passlib
+cloudinary
+sphinx
+shibuya

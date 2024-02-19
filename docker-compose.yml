@@ -1,0 +1,30 @@
+version: '3.1'
+
+services:
+
+
+  postgres:
+    image: postgres
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: ${PG_USER}
+      POSTGRES_PASSWORD: ${PG_PWD}
+      POSTGRES_DB: ${PG_HOST}
+    networks:
+      - app-network
+
+  fastapi:
+    build:
+      context: .
+    ports:
+      - "8001:8001"
+    networks:
+      - app-network
+    env_file:
+      - ./.env
+
+
+networks:
+  app-network:
+    driver: bridge
