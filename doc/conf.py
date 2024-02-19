@@ -10,9 +10,9 @@ import sys
 
 sys.path.insert(0, os.path.abspath(".."))
 
-project = "module_14 Homework"
-copyright = "2024, Andrii"
-author = "Andrii"
+project = "FastAPI Example"
+copyright = "2024, Andrii Filiurskyi"
+author = "Andrii Filiurskyi"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
